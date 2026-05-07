@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="home-hero">
+    <div class="hero-text">
+        <h2>Welcome to SR DEVELOPERS AND CONSTRUCTIONS</h2>
+        <p>We deliver premium construction solutions for residential and commercial projects with quality materials, timely delivery, and personalized client guidance.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('construction_plans') }}" class="cta-btn">Explore Construction Plans</a>
+            <a href="{{ url_for('contact') }}" class="secondary-btn">Contact Us</a>
+        </div>
+    </div>
+    <div class="hero-highlights">
+        <div class="highlight-card">
+            <h3>Quality Construction</h3>
+            <p>We use the best materials and follow strict quality control standards to build durable and elegant structures.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>On-Time Delivery</h3>
+            <p>Our disciplined project management ensures timely handover of every construction project.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Client Guidance</h3>
+            <p>We guide clients through every step of the process with transparent communication and professional advice.</p>
+        </div>
+    </div>
+</div>
+
+<section class="home-benefits">
+    <h3>Why Choose SR DEVELOPERS?</h3>
+    <div class="benefits-grid">
+        <div class="benefit-card">
+            <h4>Trusted Experience</h4>
+            <p>Years of successful residential and commercial construction, from builder floors to open plots.</p>
+        </div>
+        <div class="benefit-card">
+            <h4>Complete Services</h4>
+            <p>We handle every phase of development: planning, construction, approvals, and delivery.</p>
+        </div>
+        <div class="benefit-card">
+            <h4>Transparent Pricing</h4>
+            <p>Clear, competitive rates for basic, classic, and premium construction plans.</p>
+        </div>
+        <div class="benefit-card">
+            <h4>Premium Support</h4>
+            <p>Dedicated support throughout the project, including post-delivery maintenance assistance.</p>
+        </div>
+    </div>
+</section>
+
+<section class="home-services">
+    <h3>Our Core Services</h3>
+    <div class="services-grid">
+        <div class="service-card">
+            <h4>Commercial Development</h4>
+            <p>Office, retail, and business spaces built for performance and professionalism.</p>
+        </div>
+        <div class="service-card">
+            <h4>Residential Works</h4>
+            <p>Villas, apartments, independent houses, and builder floors designed for modern living.</p>
+        </div>
+        <div class="service-card">
+            <h4>Plot Development</h4>
+            <p>Open plot development with ready infrastructure and accurate land planning.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

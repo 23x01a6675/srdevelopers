@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add New Property</h2>
+<form method="POST">
+    <label>Title:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>Location:</label><br>
+    <input type="text" name="location" required><br><br>
+
+    <label>Price:</label><br>
+    <input type="text" name="price" required><br><br>
+
+    <label>Description:</label><br>
+    <textarea name="description" required></textarea><br><br>
+
+    <button type="submit">Add Property</button>
+</form>
+{% endblock %}

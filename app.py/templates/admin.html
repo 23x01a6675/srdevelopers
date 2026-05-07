@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="admin-container">
+    <h2>Admin Dashboard</h2>
+    <div class="admin-grid">
+        <div class="admin-card">
+            <h3>📊 Management</h3>
+            <p>Manage all property listings</p>
+            <a href="{{ url_for('available_properties') }}" class="admin-btn">Available Properties</a>
+        </div>
+        <div class="admin-card">
+            <h3>➕ Add Listing</h3>
+            <p>Create a new property listing</p>
+            <a href="{{ url_for('add_property') }}" class="admin-btn">Add Property</a>
+        </div>
+        <div class="admin-card">
+            <h3>� Lead Management</h3>
+            <p>View and manage customer leads</p>
+            <a href="{{ url_for('view_leads') }}" class="admin-btn">Manage Leads</a>
+        </div>        <div class="admin-card">
+            <h3>🏗️ Construction Plans</h3>
+            <p>View our construction plans and pricing</p>
+            <a href="{{ url_for('construction_plans') }}" class="admin-btn">View Plans</a>
+        </div>        <div class="admin-card">            <h3>🏗️ Quality Standards</h3>
+            <p>Premium materials & timely delivery</p>
+            <a href="{{ url_for('about') }}" class="admin-btn">View Standards</a>
+        </div>
+        <div class="admin-card">            <h3>�👥 About Us</h3>
+            <p>View company information</p>
+            <a href="{{ url_for('about') }}" class="admin-btn">About</a>
+        </div>
+        <div class="admin-card">
+            <h3>💼 Experience</h3>
+            <p>Our team's expertise</p>
+            <a href="{{ url_for('experience') }}" class="admin-btn">Experience</a>
+        </div>
+        <div class="admin-card">
+            <h3>📧 Contact</h3>
+            <p>Get in touch with us</p>
+            <a href="{{ url_for('contact') }}" class="admin-btn">Contact</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

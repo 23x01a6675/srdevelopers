@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit Property</h2>
+<form method="POST" enctype="multipart/form-data">
+    <label>Title:</label><br>
+    <input type="text" name="title" value="{{ property.title }}" required><br><br>
+
+    <label>Location:</label><br>
+    <input type="text" name="location" value="{{ property.location }}" required><br><br>
+
+    <label>Price:</label><br>
+    <input type="text" name="price" value="{{ property.price }}" required><br><br>
+
+    <label>Description:</label><br>
+    <textarea name="description" required>{{ property.description }}</textarea><br><br>
+
+    <label>Upload New Image (optional):</label><br>
+    <input type="file" name="image_file" accept="image/*"><br><br>
+
+    <label>Image URL (optional fallback):</label><br>
+    <input type="text" name="image_url" value="{{ property.image_url }}" placeholder="images/default.svg"><br><br>
+
+    <button type="submit">Update Property</button>
+</form>
+{% endblock %}

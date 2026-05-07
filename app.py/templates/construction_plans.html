@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="construction-plans-container">
+    <h2>🏗️ Construction Plans & Services</h2>
+    
+    <section class="services-overview">
+        <div class="services-intro">
+            <h3>Our Comprehensive Services</h3>
+            <p>SR DEVELOPERS AND CONSTRUCTIONS is committed to delivering world-class construction and development services across multiple sectors:</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h4>🏢 Commercial Development</h4>
+                    <p>Office complexes, retail spaces, and commercial hubs designed for modern businesses</p>
+                </div>
+                <div class="service-item">
+                    <h4>🏘️ Residential Works</h4>
+                    <p>Apartments, villas, bungalows, and independent houses with premium quality</p>
+                </div>
+                <div class="service-item">
+                    <h4>📐 Plots & Land Development</h4>
+                    <p>Open plots and land development projects with complete infrastructure</p>
+                </div>
+                <div class="service-item">
+                    <h4>🛠️ Infrastructure Projects</h4>
+                    <p>Roads, utilities, and common amenities development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="construction-plans">
+        <h3>Available Construction Plans</h3>
+        <p class="plans-intro">Choose from our three premium construction plans, each designed to meet different requirements and budgets:</p>
+        
+        <div class="plans-container">
+            <!-- Basic Plan -->
+            <div class="plan-card basic-plan">
+                <div class="plan-header">
+                    <h4>BASIC PLAN</h4>
+                    <div class="price-tag">₹1,800<span>/sft</span></div>
+                </div>
+                <div class="plan-content">
+                    <h5>Features:</h5>
+                    <ul>
+                        <li>✓ Standard construction materials</li>
+                        <li>✓ Efficient space utilization</li>
+                        <li>✓ Basic amenities included</li>
+                        <li>✓ Compliant with building codes</li>
+                        <li>✓ On-time delivery guarantee</li>
+                        <li>✓ 1-year structural warranty</li>
+                    </ul>
+                    <h5>Ideal For:</h5>
+                    <p>Budget-conscious buyers looking for quality construction without compromise</p>
+                    <a href="{{ url_for('contact') }}" class="plan-btn">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- Classic Plan -->
+            <div class="plan-card classic-plan">
+                <div class="plan-header">
+                    <h4>CLASSIC PLAN</h4>
+                    <div class="price-tag featured">₹2,000<span>/sft</span></div>
+                </div>
+                <div class="plan-content">
+                    <h5>Features:</h5>
+                    <ul>
+                        <li>✓ Premium quality materials</li>
+                        <li>✓ Enhanced design & aesthetics</li>
+                        <li>✓ Modern amenities</li>
+                        <li>✓ Advanced safety features</li>
+                        <li>✓ Energy-efficient systems</li>
+                        <li>✓ 2-year comprehensive warranty</li>
+                    </ul>
+                    <h5>Ideal For:</h5>
+                    <p>Discerning clients seeking quality and modern living with value for money</p>
+                    <a href="{{ url_for('contact') }}" class="plan-btn">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="plan-card premium-plan">
+                <div class="plan-header">
+                    <h4>PREMIUM PLAN</h4>
+                    <div class="price-tag">₹2,300<span>/sft</span></div>
+                </div>
+                <div class="plan-content">
+                    <h5>Features:</h5>
+                    <ul>
+                        <li>✓ Luxury materials & finishes</li>
+                        <li>✓ Architectural excellence</li>
+                        <li>✓ Smart home ready infrastructure</li>
+                        <li>✓ Premium security systems</li>
+                        <li>✓ Eco-friendly design</li>
+                        <li>✓ 5-year extended warranty</li>
+                    </ul>
+                    <h5>Ideal For:</h5>
+                    <p>Elite clients desiring luxury, sophistication, and cutting-edge construction</p>
+                    <a href="{{ url_for('contact') }}" class="plan-btn">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h3>Why Choose Our Construction Plans?</h3>
+        <div class="why-grid">
+            <div class="why-item">
+                <h5>🎯 Transparent Pricing</h5>
+                <p>No hidden costs. Clear breakdown of all charges per square foot.</p>
+            </div>
+            <div class="why-item">
+                <h5>⏰ On-Time Delivery</h5>
+                <p>Disciplined project management ensures timely handover of your property.</p>
+            </div>
+            <div class="why-item">
+                <h5>🏆 Quality Assurance</h5>
+                <p>Rigorous quality checks at every stage of construction.</p>
+            </div>
+            <div class="why-item">
+                <h5>👥 Client Guidance</h5>
+                <p>Regular updates and transparent communication throughout construction.</p>
+            </div>
+            <div class="why-item">
+                <h5>📋 Compliance</h5>
+                <p>All projects adhere to latest building codes and regulations.</p>
+            </div>
+            <div class="why-item">
+                <h5>🔧 After-Sales Support</h5>
+                <p>Dedicated support team for maintenance and warranty claims.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h3>Ready to Start Your Dream Project?</h3>
+        <p>Contact us today to discuss your construction requirements and get a detailed quote</p>
+        <a href="{{ url_for('contact') }}" class="cta-btn">Get in Touch</a>
+    </section>
+</div>
+{% endblock %}

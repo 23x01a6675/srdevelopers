@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="property-detail">
+    <img src="{{ url_for('static', filename=property.image_url) }}" alt="{{ property.title }}">
+    <div class="property-detail-info">
+        <h2>{{ property.title }}</h2>
+        <p><strong>Location:</strong> {{ property.location }}</p>
+        <p><strong>Price:</strong> {{ property.price }}</p>
+        <p>{{ property.description }}</p>
+        <a class="back-link" href="{{ url_for('index') }}">Back to Listings</a>
+    <form method="POST" action="{{ url_for('delete_property', property_id=property.id) }}" style="display:inline; margin-left: 1rem;">
+        <button type="submit" class="delete-button">Mark as Sold / Remove Listing</button>
+    </form>
+    </div>
+</div>
+
+<div class="property-upload-form">
+    <h3>Upload Property Image</h3>
+    <form method="POST" action="{{ url_for('upload_property_image', property_id=property.id) }}" enctype="multipart/form-data">
+        <input type="file" name="image_file" accept="image/*" required><br><br>
+        <button type="submit">Upload Image</button>
+    </form>
+</div>
+{% endblock %}

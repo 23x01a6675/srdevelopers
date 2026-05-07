@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#173a69" />
+      <stop offset="100%" stop-color="#7ea0d8" />
+    </linearGradient>
+    <linearGradient id="bldgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f7fb" />
+      <stop offset="100%" stop-color="#dbe2f4" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#skyGrad)" />
+  <rect x="0" y="760" width="1920" height="320" fill="#11233d" />
+  <rect x="120" y="460" width="260" height="420" rx="28" fill="url(#bldgGrad)" />
+  <rect x="180" y="520" width="100" height="40" rx="10" fill="#304c7b" opacity="0.9" />
+  <rect x="180" y="590" width="100" height="40" rx="10" fill="#304c7b" opacity="0.9" />
+  <rect x="180" y="660" width="100" height="40" rx="10" fill="#304c7b" opacity="0.9" />
+  <rect x="180" y="730" width="100" height="40" rx="10" fill="#304c7b" opacity="0.9" />
+  <rect x="420" y="340" width="260" height="540" rx="28" fill="#c5d6f0" />
+  <rect x="470" y="410" width="120" height="40" rx="10" fill="#304c7b" opacity="0.8" />
+  <rect x="470" y="480" width="120" height="40" rx="10" fill="#304c7b" opacity="0.8" />
+  <rect x="470" y="550" width="120" height="40" rx="10" fill="#304c7b" opacity="0.8" />
+  <rect x="470" y="620" width="120" height="40" rx="10" fill="#304c7b" opacity="0.8" />
+  <rect x="470" y="690" width="120" height="40" rx="10" fill="#304c7b" opacity="0.8" />
+  <rect x="760" y="250" width="280" height="620" rx="28" fill="#e1ebfb" />
+  <rect x="820" y="320" width="140" height="50" rx="12" fill="#304c7b" opacity="0.7" />
+  <rect x="820" y="400" width="140" height="50" rx="12" fill="#304c7b" opacity="0.7" />
+  <rect x="820" y="480" width="140" height="50" rx="12" fill="#304c7b" opacity="0.7" />
+  <rect x="820" y="560" width="140" height="50" rx="12" fill="#304c7b" opacity="0.7" />
+  <rect x="820" y="640" width="140" height="50" rx="12" fill="#304c7b" opacity="0.7" />
+  <rect x="1180" y="360" width="240" height="460" rx="28" fill="#f9fbff" />
+  <rect x="1240" y="430" width="120" height="44" rx="12" fill="#304c7b" opacity="0.8" />
+  <rect x="1240" y="510" width="120" height="44" rx="12" fill="#304c7b" opacity="0.8" />
+  <rect x="1240" y="590" width="120" height="44" rx="12" fill="#304c7b" opacity="0.8" />
+  <rect x="1240" y="670" width="120" height="44" rx="12" fill="#304c7b" opacity="0.8" />
+  <rect x="1610" y="410" width="180" height="520" rx="28" fill="#dbe9fd" />
+  <rect x="1660" y="480" width="100" height="36" rx="10" fill="#304c7b" opacity="0.9" />
+  <rect x="1660" y="540" width="100" height="36" rx="10" fill="#304c7b" opacity="0.9" />
+  <rect x="1660" y="600" width="100" height="36" rx="10" fill="#304c7b" opacity="0.9" />
+  <path d="M0 760 Q340 720 520 760 T1100 760 T1920 760 L1920 1080 L0 1080 Z" fill="#0e2541" opacity="0.8" />
+</svg>
